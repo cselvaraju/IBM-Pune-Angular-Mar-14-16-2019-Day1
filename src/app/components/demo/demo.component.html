@@ -1,0 +1,26 @@
+<div>
+  <h4>Demo Component</h4>
+  My favourite actor is {{ name }}
+  <p></p>
+  4 + 5 = {{ 4 + 5 }}
+  <p></p>
+  List of Vegetables
+  <ul>
+    <li *ngFor="let veg of veggieList">
+      Name: {{ veg.name }} Price: {{ veg.price }}
+    </li>
+  </ul>
+  <p></p>
+  <table>
+    <thead>
+      <th>Name</th>
+      <th>Price</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let veg of veggieList">
+        <td>{{veg.name}}</td>
+        <td>{{veg.price}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
